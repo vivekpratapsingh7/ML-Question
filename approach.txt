@@ -1,0 +1,19 @@
+In this problem we have a json file which contain large context so for find an optimal answer for given question \n create BM25 index for given article by using index we can find top n relevant article
+after that we use pipeline for for find the answers in top n relevent articles
+
+Opens and reads the JSON file containing the articles.
+Cleans each article's content by removing non-alphanumeric characters.
+Returns a list of cleaned article .
+
+Filters articles to include only those mentioning both "Israel" and "Hamas".
+
+Tokenizes the articles by splitting the text into words.
+Creates a BM25 index for the tokenized articles.
+
+Tokenizes the question.
+Uses BM25 to score each article based on its relevance to the question(by using get_scores()).
+Selects the top N most relevant articles.
+Uses the Hugging Face question-answering pipeline to find answers from the selected articles.
+
+Main function : loading data, filtering relevant articles, indexing articles, and answering the question.
+Returns the answers to the given question.

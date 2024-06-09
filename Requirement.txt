@@ -1,0 +1,4 @@
+necessary python packages :
+1   rank_bm25
+2   transformers
+

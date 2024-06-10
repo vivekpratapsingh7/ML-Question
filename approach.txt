@@ -1,6 +1,6 @@
 approach:
         In this problem we have a json file which contain large context so for find an optimal answer for given question \n create BM25 index for given article by using index we can find top n relevant article
-        after that we use pipeline for for find the answers in top n relevent articles
+        after that we use pipeline for for find the answers in top n relevent articles.
 
 code explanation :
         Opens and reads the JSON file containing the articles.
